@@ -52,7 +52,7 @@ ActiveRecord::Schema.define(version: 2022_02_20_084225) do
     t.string "title"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.bigint "collection_id", null: false
+    t.bigint "collection_id"
     t.index ["collection_id"], name: "index_tables_on_collection_id"
     t.index ["user_id"], name: "index_tables_on_user_id"
   end
